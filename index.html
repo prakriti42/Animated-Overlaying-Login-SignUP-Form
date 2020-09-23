@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>LogIn/SignUP</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href=".\CSS\styles.css">
+    <link rel="stylesheet" href=".\CSS\pageLoadTransition.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Asul:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- Header Section  -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span>SITE</span> Name
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- End of Header Section -->
+    <section >
+    <!-- Content for the LogIn/SignUp Page -->
+        <div class="content">
+            <!-- Slideshow Conatiner  -->
+            <div class="slideshowcontainer">
+                <div class="Imageslider">
+                    <div class="slidenumber"> 1/3 </div>
+                        <img src=".\Images\islandofbooks.jpg" height="300px" width="500px" >
+                            <div class="text">Image Slider Caption 1</div>
+                </div>
+    
+                <div class="Imageslider">
+                    <div class="slidenumber"> 1/3 </div>
+                        <img src=".\Images\image3.jpg" height="300px" width="500px" >
+                            <div class="text">Image Slider Caption 2</div>
+                </div>
+       
+                <div class="Imageslider">
+                    <div class="slidenumber"> 2/3 </div>
+                        <img src=".\Images\image2.jpg"  height="300px" width="500px" >
+                            <div class="text">Image Slider Caption 3</div>
+                </div>
+                
+                <div class="Imageslider">
+                    <div class="slidenumber"> 3/3 </div>
+                        <img src=".\Images\customizedsearch.jpg" height="300px" width="500px">
+                            <div class="text">Image Slider Caption 3</div>
+                </div>
+      
+                <div class="Imageslider">
+                    <div class="slidenumber"> 4/3 </div>
+                        <img src=".\Images\books.jpg" height="300px" width="500px">
+                            <div class="text">Image Slider Caption 4</div>
+                </div>
+            </div>
+        <!-- Right Side of the page Content -->
+        <div class="rightside">
+            <h1>PRESS JOIN FOR MODAL</h1>
+                <button id="button">Join</button>
+        </div>
+    
+        </div>
+
+        <!-- End of Page Content -->
+
+        <!-- The Overlay PopUp for SignUp and LogIn -->
+        
+        <div class="popup-container" id = "popup-container">
+            
+            <!-- SignUp Form -->
+
+            <div class="form-container sign-up-container">
+                <form action="#" class="form-signUp" method="POST">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social" id="social"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social" id="social"><i class="fab fa-google"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" id = "name" required>
+                    <input type="email" placeholder="Email" id="email" required>
+                    <input type="password" placeholder="Password" id="pass" required>
+                    <button type="submit" id="register">Sign Up</button>
+                </form>
+            </div>
+
+            <!-- SignIn Form -->
+
+            <div class="form-container sign-in-container">
+                <form action="" class="form-signin" method="POST">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social" id="social"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social" id="social"><i class="fab fa-google"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" id ="e-mail" required>
+                    <input type="password" placeholder="Password" id="password" required>
+                    <a href="#" id="forget-link">Forgot your password?</a>
+                    <button type="submit" id="login">Sign In</button>
+                </form>
+            </div>
+
+            <!-- Overlays for the Forms -->
+            <div class="overlay-container">
+
+                <div class="overlay">
+
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected please enter your log in details.</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello!</h1>
+                        <p>Enter your details and start yourjourney</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End of the PopUp div. -->
+</section> 
+
+
+<!-- Necessary JavaScript File -->
+<script src=".\JavaScript\script.js"></script>
+
+</body>
+</html>
